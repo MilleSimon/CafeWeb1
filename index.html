@@ -26,25 +26,26 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   <img class="w3-image" src="/img/cafeMainImg.jpg" alt="London" width="1500" height="700">
   <div class="w3-display-middle" style="width:50%">
     <div class="w3-bar w3-black">
-      <label class="w3-bar-item w3-red"><i class="fa fa-user w3-margin-right"></i>Login</label>
-      <label class="w3-bar-item"><i class="fa fa-map-marker w3-margin-right"></i>Location</label>
+      <label id="loginTab" class="w3-bar-item w3-red"><i class="fa fa-user w3-margin-right"></i>Login</label>
+      <label id="locationTab" class="w3-bar-item"><i class="fa fa-map-marker w3-margin-right"></i>Location</label>
     </div>
 
-    <div id="Login" class="w3-container w3-white w3-padding-16">
+    <div id="login" class="w3-container w3-white w3-padding-16">
       <h3>Welcome to Cafe!</h3>
       <p>Login to our website to get your menu.</p>
       <p>
         Username:
-        <input class="w3-input w3-border" type="text">
+        <input id="loginUsername" class="w3-input w3-border" type="text">
       </p>
       <p>
         Password:
-        <input class="w3-input w3-border" type="password">
+        <input id="loginPassword" class="w3-input w3-border" type="password">
       </p>
-      <p><button class="w3-button w3-dark-grey" type="submit">Submit</button></p>
+      <p class="hiddenText" hidden>Sign in mmmmmmmmmmmmmmm</p>
+      <p><button onclick="loginSubmit()" class="w3-button w3-dark-grey" type="submit">Submit</button></p>
     </div>
 
-    <div id="Location" class="w3-container w3-white w3-padding-16" style="display: none;">
+    <div id="location" class="w3-container w3-white w3-padding-16" style="display: none;">
       <h3>Select which resturaunt you are in</h3>
       <div class="w3-row-padding" style="margin:0 -16px;">
         <div class="w3-half">
