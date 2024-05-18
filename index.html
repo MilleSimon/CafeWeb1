@@ -16,16 +16,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
 <body class="w3-light-grey">
 
 <!-- Navigation Bar -->
-<div class="w3-bar w3-white w3-border-bottom w3-xlarge ontop100">
+<div class="w3-bar w3-white w3-border-bottom w3-xlarge">
     <a href="index.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>CAFE</b></a>
     <a href="products.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-shopping-cart w3-margin-right"></i>SHOP</b></a>
     <a href="contact.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-envelope w3-margin-right"></i>CONTACT</b></a>
 </div>
 
 <!-- Login section -->
-<header class="w3-display-container w3-content ontop100">
-  <img class="w3-image" src="/img/cafeMainImg.jpg" alt="Cafe">
-  <div class="w3-display-middle w3-animate-opacity ontop50" style="width:50%">
+<header class="w3-display-container w3-content">
+  <img class="w3-image" src="/img/cafeMainImg.jpg" alt="Cafe background">
+  <div class="w3-display-middle w3-animate-opacity w3-mobile">
     <div class="w3-bar w3-black">
       <label id="loginTab" class="w3-bar-item w3-red"><i class="fa fa-user w3-margin-right"></i>Login</label>
       <label id="locationTab" class="w3-bar-item"><i class="fa fa-map-marker w3-margin-right"></i>Location</label>
@@ -42,7 +42,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
         Password:
         <input id="loginPassword" class="w3-input w3-border" type="password">
       </p>
-      <p class="hiddenText" hidden>Sign in mmmmmmmmmmmmmmm</p>
+      <p class="hiddenText" hidden>Please input a username or password</p>
       <p><button onclick="loginSubmit()" class="w3-button w3-dark-grey" type="submit">Submit</button></p>
     </div>
 
@@ -54,7 +54,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
           <select class="w3-select">
             <option>Gothenburg</option>
             <option>Stockholm</option>
-            <option>Malmö</option>
+            <option>Malmo</option>
           </select>
         </div>
       </div>
@@ -153,22 +153,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
-<script>
-// Tabs
-function openLink(evt, linkName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("myLink");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(linkName).style.display = "block";
-  evt.currentTarget.className += " w3-red";
-}
-</script>
 <script src="script/login.js"></script>
 </body>
 </html>
