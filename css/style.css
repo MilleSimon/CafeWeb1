@@ -8,3 +8,23 @@
 .ontop100 {
     z-index: 100;
 }
+
+#contact i {
+  width: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Raleway", Arial, Helvetica, sans-serif
+}
+
+#location {
+  display: none;
+}
+
+.w3-row-padding {
+  margin:0 -16px;
+}
