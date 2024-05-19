@@ -8,59 +8,61 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/style.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
 </head>
 <body class="w3-light-grey">
 
 <!-- Navigation Bar -->
 <div class="w3-bar w3-white w3-border-bottom w3-xlarge">
-    <a href="index.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>CAFE</b></a>
-    <a href="products.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-shopping-cart w3-margin-right"></i>SHOP</b></a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-envelope w3-margin-right"></i>CONTACT</b></a>
+    <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>CAFE</b></a>
 </div>
 
+
 <!-- Login section -->
-<header class="w3-display-container w3-content">
-  <img class="w3-image" src="/img/cafeMainImg.jpg" alt="Cafe background">
-  <div class="w3-display-middle w3-animate-opacity w3-mobile">
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+  <img class="w3-image" src="/img/cafeMainImg.jpg" alt="London" width="1500" height="700">
+  <div class="w3-display-middle" style="width:50%">
     <div class="w3-bar w3-black">
-      <label id="loginTab" class="w3-bar-item w3-red"><i class="fa fa-user w3-margin-right"></i>Login</label>
-      <label id="locationTab" class="w3-bar-item"><i class="fa fa-map-marker w3-margin-right"></i>Location</label>
+      <label class="w3-bar-item w3-red"><i class="fa fa-user w3-margin-right"></i>Login</label>
+      <label class="w3-bar-item"><i class="fa fa-map-marker w3-margin-right"></i>Location</label>
     </div>
 
-    <div id="login" class="w3-container w3-white w3-padding-16">
+    <div id="Login" class="w3-container w3-white w3-padding-16">
       <h3>Welcome to Cafe!</h3>
       <p>Login to our website to get your menu.</p>
       <p>
         Username:
-        <input id="loginUsername" class="w3-input w3-border" type="text">
+        <input class="w3-input w3-border" type="text">
       </p>
       <p>
         Password:
-        <input id="loginPassword" class="w3-input w3-border" type="password">
+        <input class="w3-input w3-border" type="password">
       </p>
-      <p class="hiddenText" hidden>Please input a username or password</p>
-      <p><button onclick="loginSubmit()" class="w3-button w3-dark-grey" type="submit">Submit</button></p>
+      <p><button class="w3-button w3-dark-grey" type="submit">Submit</button></p>
     </div>
 
-    <div id="location" class="w3-container w3-white w3-padding-16">
+    <div id="Location" class="w3-container w3-white w3-padding-16" style="display: none;">
       <h3>Select which resturaunt you are in</h3>
-      <div class="w3-row-padding">
+      <div class="w3-row-padding" style="margin:0 -16px;">
         <div class="w3-half">
           <label>I'm at:</label>
           <select class="w3-select">
             <option>Gothenburg</option>
             <option>Stockholm</option>
-            <option>Malmo</option>
+            <option>Malmö</option>
           </select>
         </div>
       </div>
-      <p><a href="pages/products.html" class="w3-button w3-dark-grey">Go to menu</a></p>
+      <p><button class="w3-button w3-dark-grey">Go to menu</button></p>
     </div>
   </div>
 </header>
 
 <!-- Extra info -->
-<div class="w3-content">
+<div class="w3-content" style="max-width:1100px;">
 
   <!-- Good offers -->
   <div class="w3-container w3-margin-top">
@@ -70,41 +72,44 @@
   <div class="w3-row-padding w3-text-white w3-large">
     <div class="w3-half w3-margin-bottom">
       <div class="w3-display-container">
-        <img src="/img/latte.jpg" alt="Latte">
+        <img src="/img/latte.jpg" alt="Latte" style="width:100%">
         <span class="w3-display-bottomleft w3-padding">Latte</span>
       </div>
     </div>
     <div class="w3-half">
-      <div class="w3-row-padding">
+      <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
-            <img src="/img/cinnamon.jpg" alt="Cinnamon Rolls">
+            <img src="/img/cinnamon.jpg" alt="Cinnamon Rolls" style="width:100%">
             <span class="w3-display-bottomleft w3-padding">Cinnamon Roll</span>
           </div>
         </div>
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
-            <img src="/img/espresso.jpg" alt="Espresso">
-            <span class="w3-display-bottomleft w3-padding">Espresso</span>
+            <img src="/img/sanfran.jpg" alt="San Francisco" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">San Francisco</span>
           </div>
         </div>
       </div>
-      <div class="w3-row-padding">
+      <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
-            <img src="/img/macaron.jpg" alt="Macaron">
-            <span class="w3-display-bottomleft w3-padding">Macaron</span>
+            <img src="/img/pisa.jpg" alt="Pisa" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Pisa</span>
           </div>
         </div>
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
-            <img src="/img/cookie.jpg" alt="Cookie">
-            <span class="w3-display-bottomleft w3-padding">Cookie</span>
+            <img src="/img/paris.jpg" alt="Paris" style="width:100%">
+            <span class="w3-display-bottomleft w3-padding">Paris</span>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Enviourment -->
+  
 
   <!-- Newsletter -->
   <div class="w3-container">
@@ -118,12 +123,12 @@
   </div>
   
   <!-- Contact -->
-  <div class="w3-container" id="contact">
+  <div class="w3-container">
     <h2>Contact</h2>
     <p>Let us book your next trip!</p>
-    <i class="fa fa-map-marker"></i> Gothenburg, Sweden<br>
-    <i class="fa fa-phone"></i> Phone: +00 151515<br>
-    <i class="fa fa-envelope"> </i> Email: isalog506@elev.ga.lbs.se<br>
+    <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
+    <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
+    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
@@ -149,6 +154,22 @@
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
-<script src="script/login.js"></script>
+<script>
+// Tabs
+function openLink(evt, linkName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("myLink");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(linkName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
 </body>
 </html>
