@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Cafe name</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/raleway.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body class="w3-light-grey">
 
 <!-- Navigation Bar -->
 <div class="w3-bar w3-white w3-border-bottom w3-xlarge">
     <a href="index.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-map-marker w3-margin-right"></i>CAFE</b></a>
-    <a href="products.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-shopping-cart w3-margin-right"></i>SHOP</b></a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-envelope w3-margin-right"></i>CONTACT</b></a>
+    <a href="pages/products.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-shopping-cart w3-margin-right"></i>SHOP</b></a>
+    <a href="pages/contact.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-envelope w3-margin-right"></i>CONTACT</b></a>
+    <a href="pages/about.html" class="w3-bar-item w3-button w3-text-red w3-hover-red"><b><i class="fa fa-info w3-margin-right"></i>ABOUT US</b></a>
 </div>
 
 <!-- Login section -->
@@ -30,19 +31,15 @@
     <div id="login" class="w3-container w3-white w3-padding-16">
       <h3>Welcome to Cafe!</h3>
       <p>Login to our website to get your menu.</p>
-      <p>
-        Username:
-        <input id="loginUsername" class="w3-input w3-border" type="text">
-      </p>
-      <p>
-        Password:
-        <input id="loginPassword" class="w3-input w3-border" type="password">
-      </p>
+      <label for="loginUsername">Username:</label>
+      <input id="loginUsername" class="w3-input w3-border" type="text">
+      <label for="loginPassword">Password:</label>
+      <input id="loginPassword" class="w3-input w3-border" type="password">
       <p class="hiddenText" hidden>Please input a username or password</p>
       <p><button onclick="loginSubmit()" class="w3-button w3-dark-grey" type="submit">Submit</button></p>
     </div>
 
-    <div id="location" class="w3-container w3-white w3-padding-16">
+    <div id="location" hidden class="w3-container w3-white w3-padding-16">
       <h3>Select which resturaunt you are in</h3>
       <div class="w3-row-padding">
         <div class="w3-half">
@@ -71,7 +68,7 @@
     <div class="w3-half w3-margin-bottom">
       <div class="w3-display-container">
         <img src="/img/latte.jpg" alt="Latte">
-        <span class="w3-display-bottomleft w3-padding">Latte</span>
+        <span class="w3-display-bottomleft w3-padding w3-black">Latte</span>
       </div>
     </div>
     <div class="w3-half">
@@ -79,13 +76,13 @@
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
             <img src="/img/cinnamon.jpg" alt="Cinnamon Rolls">
-            <span class="w3-display-bottomleft w3-padding">Cinnamon Roll</span>
+            <span class="w3-display-bottomleft w3-padding w3-black">Cinnamon Roll</span>
           </div>
         </div>
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
             <img src="/img/espresso.jpg" alt="Espresso">
-            <span class="w3-display-bottomleft w3-padding">Espresso</span>
+            <span class="w3-display-bottomleft w3-padding w3-black">Espresso</span>
           </div>
         </div>
       </div>
@@ -93,13 +90,13 @@
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
             <img src="/img/macaron.jpg" alt="Macaron">
-            <span class="w3-display-bottomleft w3-padding">Macaron</span>
+            <span class="w3-display-bottomleft w3-padding w3-black">Macaron</span>
           </div>
         </div>
         <div class="w3-half w3-margin-bottom">
           <div class="w3-display-container">
             <img src="/img/cookie.jpg" alt="Cookie">
-            <span class="w3-display-bottomleft w3-padding">Cookie</span>
+            <span class="w3-display-bottomleft w3-padding w3-black">Cookie</span>
           </div>
         </div>
       </div>
@@ -111,9 +108,11 @@
     <div class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off">
       <h2>Get the best offers first!</h2>
       <p>Join our newsletter.</p>
-      <label>E-mail</label>
-      <input class="w3-input w3-border" type="text" placeholder="Your Email address">
-      <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+      <form action="/action_page.php" target="_blank">
+        <label for="newsmail">E-mail</label>
+        <input id="newsmail" class="w3-input w3-border" type="text" placeholder="Your Email address">
+        <button type="submit" class="w3-button w3-red w3-margin-top">Subscribe</button>
+      </form>
     </div>
   </div>
   

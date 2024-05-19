@@ -16,7 +16,7 @@ function loginSubmit()
     }
 
     loginDiv.setAttribute("style", "Display: none;");
-    locationDiv.removeAttribute("style");
+    locationDiv.setAttribute("style", "Display: block;");
     document.getElementById("loginTab").classList.remove("w3-red");
     document.getElementById("locationTab").classList.add("w3-red");
 }
