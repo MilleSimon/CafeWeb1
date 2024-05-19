@@ -176,3 +176,11 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.slideshow-container {
+  width: 50%;
+}
+
+.dotDiv {
+  text-align: center;
+}
